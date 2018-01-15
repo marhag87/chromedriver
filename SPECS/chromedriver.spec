@@ -1,5 +1,5 @@
 Name:		       chromedriver
-Version:	     2.34
+Version:	     2.35
 Release:	     1%{?dist}
 Summary:	     WebDriver for Google Chrome/Chromium
 
@@ -34,5 +34,7 @@ cp * %{buildroot}%{_bindir}/
 %{_bindir}/chromedriver
 
 %changelog
+* Mon Jan 15 2018 Martin Hagstrom <marhag87@gmail.com> 2.35-1
+- Update to 2.35
 * Mon Jan 15 2018 Martin Hagstrom <marhag87@gmail.com> 2.34-1
 - Initial release
