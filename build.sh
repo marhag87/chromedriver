@@ -8,6 +8,7 @@ function version() {
 
 function build() {
   rm -rf BUILD BUILDROOT RPMS SRPMS || true
+  mkdir SOURCES 2>/dev/null || true
   wget https://chromedriver.storage.googleapis.com/$(version)/chromedriver_linux64.zip -O SOURCES/chromedriver-$(version).zip
   rpmbuild --define "_topdir $(git rev-parse --show-toplevel)" -bb SPECS/chromedriver.spec
   mv RPMS/x86_64/chromedriver-*.rpm .
