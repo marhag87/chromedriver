@@ -1,12 +1,13 @@
-Name:		       chromedriver
-Version:	     2.35
-Release:	     1%{?dist}
-Summary:	     WebDriver for Google Chrome/Chromium
+Name:          chromedriver
+Version:       2.35
+Release:       2%{?dist}
+Epoch:         1
+Summary:       WebDriver for Google Chrome/Chromium
 
-Group:		     Unspecified
-License:	     BSD and LGPLv2+ and ASL 2.0 and IJG and MIT and GPLv2+ and ISC and OpenSSL and (MPLv1.1 or GPLv2 or LGPLv2)
-URL:		       http://www.chromium.org/Home
-Source0:	     https://chromedriver.storage.googleapis.com/%{version}/%{name}_linux64.zip#/%{name}-%{version}.zip
+Group:         Unspecified
+License:       BSD and LGPLv2+ and ASL 2.0 and IJG and MIT and GPLv2+ and ISC and OpenSSL and (MPLv1.1 or GPLv2 or LGPLv2)
+URL:           http://www.chromium.org/Home
+Source0:       https://chromedriver.storage.googleapis.com/%{version}/%{name}_linux64.zip#/%{name}-%{version}.zip
 
 BuildRequires: unzip
 
@@ -34,6 +35,8 @@ cp * %{buildroot}%{_bindir}/
 %{_bindir}/chromedriver
 
 %changelog
+* Mon Jan 15 2018 Martin Hagstrom <marhag87@gmail.com> 2.35-2
+- Increase epoch
 * Mon Jan 15 2018 Martin Hagstrom <marhag87@gmail.com> 2.35-1
 - Update to 2.35
 * Mon Jan 15 2018 Martin Hagstrom <marhag87@gmail.com> 2.34-1
